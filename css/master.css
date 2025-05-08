@@ -1,0 +1,138 @@
+
+/* main colors */
+:root {
+    --primary-color: #2C3E50;       /* Dark Blue-Grey */
+    --secondary-color: #E67E22;     /* Warm Orange */
+    --accent-color: #F1C40F;        /* Golden Yellow */
+    --background-color: #F8F8F8;    /* Light Grey */
+    --text-color: #2C3E50;          /* Dark Text */
+    --white-color: #FFFFFF;
+}  
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* loader */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.loader {
+    width: 20vw;
+    max-width: 120px;
+    height: 22px;
+    border-radius: 40px;
+    border: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    background: var(--secondary-color);
+    animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    50% { left: 100%; transform: translateX(calc(-100% - 4px)); }
+}
+
+.loader-container p {
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.loader-container p span {
+    color: var(--secondary-color);
+}
+
+/* Content Styles (initially hidden) */
+#content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#content.show {
+    display: block;
+    opacity: 1;
+}
+
+/* slides */
+.carousel-item {
+    height: 90vh; 
+    overflow: hidden;
+}
+
+.carousel-item {
+    font-family: "Comic Relief", system-ui;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2; 
+    color: white;
+}
+
+.carousel-caption h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+.carousel-caption h3 span {
+    color: var(--secondary-color);
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* navbar */
