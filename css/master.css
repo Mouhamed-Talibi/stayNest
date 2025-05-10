@@ -467,9 +467,69 @@ body {
     color: var(--secondary-color);
 }
 
+.par2 {
+    padding: 10px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    letter-spacing: 0.7;
+    line-height: 1.4;
+}
+
 .about h3, 
 .about p, 
 .about ul, 
 .about img {
     transition: all 0.8s ease-in-out;
+}
+
+/* services */
+.services {
+    background-color: var(--white-color);
+}
+
+.service {
+    padding: 10px;
+    height: 250px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.service i {
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-weight: 600;
+}
+
+.service h3 span {
+    background-color: var(--secondary-color);
+    padding: 0 8px;
+    color: var(--background-color);
+    opacity: .8;
+}
+.service p {
+    margin-bottom: 20px;
+}
+
+.service:hover,
+.service:focus {
+    border-bottom: 2px solid var(--text-color);
+    transition: all .5s ease;
+}
+
+.service:hover i,
+.service:focus i {
+    color: var(--text-color);
+    transition: all .5s ease;
+}
+
+.service:hover h3 span,
+.service:focus h3 span {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transition: all .5s ease;
 }
