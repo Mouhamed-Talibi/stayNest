@@ -34,6 +34,25 @@ body {
     transition: all .5s ease;
 }
 
+/* main-title */
+.main-title h1 {
+    color: var(--text-color);
+    font-weight: 900;
+}
+
+.main-title h1 span {
+    color: var(--secondary-color);
+}
+
+.main-title i {
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+
+.main-title p {
+    color: var(--text-color);
+}
+
 /* loader */
 .loader-container {
     position: fixed;
@@ -230,9 +249,11 @@ body {
 }
 
 .navbar .nav-link.contact:hover {
-    transform: translateY(-1px) scale(1.02);
-    color: var(--primary-color);
-    background-color: var(--background-color);
+    transform: scale(1.02);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    transition: all .3s ease-in-out;
 }
 
 .navbar-toggler {
@@ -328,8 +349,30 @@ body {
     color: var(--secondary-color);
 }
 
+.hero-text h1 {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 2px;
+    animation: 
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-right: 1px solid transparent }
+    50% { border-right: 2px solid var(--secondary-color); } 
+}
+
 .hero-text p {
     line-height: 1.8;
+    letter-spacing: 0.8px;
+    word-spacing: 1.2px;
 }
 
 @media (min-width: 365px) and (max-width: 768px) {
@@ -412,4 +455,21 @@ body {
     .hero-img-fluid {
         width: 240px;
     }
+}
+
+
+/* about */
+.quote {
+    color: var(--secondary-color);
+}
+
+.par1 span {
+    color: var(--secondary-color);
+}
+
+.about h3, 
+.about p, 
+.about ul, 
+.about img {
+    transition: all 0.8s ease-in-out;
 }
