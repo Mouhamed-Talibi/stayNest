@@ -518,7 +518,7 @@ body {
 .service:hover,
 .service:focus {
     border-bottom: 2px solid var(--text-color);
-    transition: all .5s ease;
+    transition: all .1s ease;
 }
 
 .service:hover i,
@@ -532,4 +532,35 @@ body {
     background-color: var(--text-color);
     color: var(--background-color);
     transition: all .5s ease;
+}
+
+/* hotels */
+.hotels {
+    background-color: var(--background-color);
+}
+
+.room {
+    overflow: hidden;
+}
+
+.room .room-image img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.room:hover .room-image img {
+    transform: scale(1.05);
+}
+
+.room h2 {
+    color: var(--text-color);
+}
+
+.room .price {
+    color: var(--secondary-color);
+    opacity: .7;
+}
+
+.room:hover .price {
+    opacity: 1;
+    transition: all .3s ease;
 }

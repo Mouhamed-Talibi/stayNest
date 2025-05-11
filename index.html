@@ -28,7 +28,7 @@
     <!-- Loader (visible by default) -->
     <div id="loader" class="loader-container">
         <div class="loader"></div>
-        <p class="fw-bold">Loading <span>stayNest</span> Hotel, <span class="fs-4">Please Wait..</span></p>
+        <p class="fw-bold"><span>stayNest</span> Is Loading, <span class="fs-4">Please Wait..</span></p>
     </div>
 
     <!-- Content (hidden by default) -->
@@ -96,13 +96,10 @@
                             <a class="nav-link" href="#services">Services</a>  
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#skills">Skills</a>  
+                            <a class="nav-link" href="#hotels">Our Hotels</a>  
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="#courses">Courses</a>  
-                        </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link contact" href="#contact">Contact Us</a>  
+                            <a class="nav-link contact" href="login.html">Book your Room</a>  
                         </li>
                     </ul>
                 </div>
@@ -121,19 +118,16 @@
                         <a class="nav-link active mobile-nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="#services">About</a>
+                        <a class="nav-link mobile-nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="#about">Services</a>
+                        <a class="nav-link mobile-nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="#skills">Skills</a>
+                        <a class="nav-link mobile-nav-link" href="#hotels">Our Hotels</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="#courses">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="#contact">Contact Me</a>
+                        <a class="nav-link mobile-nav-link" href="login.html">Book your Room</a>
                     </li>
                 </ul>
             </div>
@@ -205,7 +199,7 @@
         </div>
 
         <!-- services section -->
-        <div class="services py-5 pb-5">
+        <div class="services py-5 pb-5" id="services">
             <div class="container">
                 <div class="main-title text-center">
                     <i class="fas fa-hands-helping"></i>
@@ -279,6 +273,56 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- hotels section -->
+        <div class="hotels py-5 pb-5" id="hotels">
+            <div class="container-fluid">
+                <div class="main-title text-center">
+                    <i class="fas fa-hotel"></i>
+                    <h1>Rooms & <span>Suites</span></h1>
+                    <p>Explore Exquisite Hotels Handpicked for You</p>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center mt-4">
+                    <div class="col-md-6 col-lg-3 px-2 py-3 mx-4">
+                        <div class="room">
+                            <div class="room-image">
+                                <img src="images/room-1.jpg" alt="Single Room" class="img-fluid">
+                            </div>
+                            <div class="infos text-center">
+                                <h2 class="mt-4 mb-2">Single Room</h2>
+                                <p class="price">91$ / per Night</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 px-2 py-3 mx-4">
+                        <div class="room">
+                            <div class="room-image">
+                                <img src="images/room-2.jpg" alt="Family Room" class="img-fluid">
+                            </div>
+                            <div class="infos text-center">
+                                <h2 class="mt-4 mb-2">Family Room</h2>
+                                <p class="price">130$ / per Night</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 px-2 py-3 mx-4">
+                        <div class="room">
+                            <div class="room-image">
+                                <img src="images/room-3.jpg" alt="Presidential Room" class="img-fluid">
+                            </div>
+                            <div class="infos text-center">
+                                <h2 class="mt-4 mb-2">Presidential Room</h2>
+                                <p class="price">260$ / per Night</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
