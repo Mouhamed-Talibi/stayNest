@@ -4,7 +4,7 @@
     --primary-color: #2C3E50;       /* Dark Blue-Grey */
     --secondary-color: #E67E22;     /* Warm Orange */
     --accent-color: #F1C40F;        /* Golden Yellow */
-    --background-color: #F8F8F8;    /* Light Grey */
+    --background-color: #dbd9d9;    /* Light Grey */
     --text-color: #2C3E50;          /* Dark Text */
     --white-color: #FFFFFF;
 }  
@@ -563,4 +563,40 @@ body {
 .room:hover .price {
     opacity: 1;
     transition: all .3s ease;
+}
+
+/* footer */
+footer {
+    background-color: var(--text-color);
+}
+
+.staynest a {
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.staynest a:hover {
+    color: var(--secondary-color);
+    transform: translate(2px , -2px);
+}
+
+.quick-links h4 {
+    color: var(--white-color);
+}
+
+.quick-links li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quick-links li a span {
+    color: var(--secondary-color);
+}
+
+.quick-links li a:hover {
+    color: var(--secondary-color);
+    padding-left: 5px;
+}
+
+.footer-contact h4 {
+    color: var(--white-color);
 }
