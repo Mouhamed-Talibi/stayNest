@@ -701,7 +701,7 @@ footer {
 
 @media (max-width: 991.98px) {
     .login-box {
-        max-height: none;
+        max-height: 90vh;
         height: auto;
     }
 
