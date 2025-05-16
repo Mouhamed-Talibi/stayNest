@@ -721,3 +721,56 @@ footer {
 .form-box .footer p a{
     color: var(--secondary-color);
 }
+
+/* single rooms style */
+.card-body .price {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.room-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.room-card .card-img-top {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.room-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.book-now {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.room-card:hover .book-now {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.book-btn {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
