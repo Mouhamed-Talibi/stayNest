@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>stayNest - Rooms</title>
+    <title>stayNest - Single Rooms</title>
 
     <!-- Favicon (Browser Tab Icon) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -87,56 +87,75 @@
             </div>
         </div>
 
-        <!-- hotels section -->
-        <div class="hotels py-5 pb-5" id="hotels">
-            <div class="container-fluid">
-                <div class="main-title text-center">
-                    <i class="fas fa-hotel"></i>
-                    <h1>Rooms & <span>Suites</span></h1>
-                    <p>Explore Exquisite Hotels Handpicked for You</p>
+        <!-- Family Rooms Section -->
+        <section class="famillyRooms py-5 bg-white">
+            <div class="container">
+                <div class="main-title text-center mb-5">
+                    <i class="fas fa-people-roof fa-2x mb-3"></i>
+                    <h1 class="fw-bold">Our <span class="">Family</span> Rooms</h1>
+                    <p class="text-muted">Spacious, cozy, and perfect for your whole family.</p>
                 </div>
-                <div class="row g-4 justify-content-center align-items-center mt-4">
-                    <div class="col-md-6 col-lg-3 px-2 py-2 mx-4">
-                        <div class="room position-relative">
-                            <div class="room-image">
-                                <img src="images/room-1.jpg" alt="Single Room" class="img-fluid">
+
+                <div class="row gy-4">
+                    <!-- Room Card -->
+                    <div class="col-12" data-aos="fade-right" data-aos-delay="100">
+                        <div class="d-md-flex bg-light rounded-4 shadow overflow-hidden room-card">
+                            <img src="images/famillyRooms/room-1.jpg" class="img-fluid rounded-start w-100 w-md-50" style="max-height: 280px; object-fit: cover;" alt="Family Room 1">
+                            <div class="p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="fw-bold text-dark">Classic Family Suite</h3>
+                                    <p class="text-muted mb-3">Spacious room with queen bed, bunk beds, and a kitchenette. Perfect for up to 4 guests.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="price">$210/night</small>
+                                    <a href="#" class="btn fw-bold">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                                    </a>
+                                </div>
                             </div>
-                            <div class="infos text-center">
-                                <h2 class="mt-4 mb-2">Single Room</h2>
-                                <p class="price">91$ / per Night</p>
-                            </div>
-                            <a href="singleRooms.html" class="stretched-link"></a>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 px-2 py-2 mx-4">
-                        <div class="room position-relative">
-                            <div class="room-image">
-                                <img src="images/room-2.jpg" alt="Family Room" class="img-fluid">
+                    <!-- Room Card -->
+                    <div class="col-12" data-aos="fade-left" data-aos-delay="200">
+                        <div class="d-md-flex bg-light rounded-4 shadow-sm overflow-hidden room-card flex-md-row-reverse">
+                            <img src="images/famillyRooms/room-2.jpg" class="img-fluid rounded-end w-100 w-md-50" style="max-height: 280px; object-fit: cover;" alt="Family Room 2">
+                            <div class="p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="fw-bold text-dark">Deluxe Family Room</h3>
+                                    <p class="text-muted mb-3">Includes two double beds, balcony with view, and a kids' play corner.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="price">$145/night</small>
+                                    <a href="#" class="btn fw-bold">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                                    </a>
+                                </div>
                             </div>
-                            <div class="infos text-center">
-                                <h2 class="mt-4 mb-2">Family Room</h2>
-                                <p class="price">130$ / per Night</p>
-                            </div>
-                            <a href="famillyRooms.html" class="stretched-link"></a>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 px-2 py-2 mx-4">
-                        <div class="room position-relative">
-                            <div class="room-image">
-                                <img src="images/room-3.jpg" alt="Presidential Room" class="img-fluid">
+                    <!-- Room Card -->
+                    <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="d-md-flex bg-light rounded-4 shadow-sm overflow-hidden room-card">
+                            <img src="images/famillyRooms/room-3.jpg" class="img-fluid rounded-start w-100 w-md-50" style="max-height: 280px; object-fit: cover;" alt="Family Room 3">
+                            <div class="p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="fw-bold text-dark">Luxury Family Suite</h3>
+                                    <p class="text-muted mb-3">Top-tier comfort, master bedroom + kids' room, smart TV, and minibar included.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="price">$180/night</small>
+                                    <a href="#" class="btn fw-bold">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                                    </a>
+                                </div>
                             </div>
-                            <div class="infos text-center">
-                                <h2 class="mt-4 mb-2">Presidential Room</h2>
-                                <p class="price">260$ / per Night</p>
-                            </div>
-                            <a href="presidentialRooms.html" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
         <footer class="py-3 pb-4">

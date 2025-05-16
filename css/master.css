@@ -771,6 +771,22 @@ footer {
 }
 
 .book-btn:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+
+/* familly rooms */
+.famillyRooms .room-card .price {
+    color: var(--secondary-color);
+}
+
+.famillyRooms .room-card a {
+    color: var(--white-color);
+    background-color: var(--text-color);
+}
+
+.famillyRooms .room-card a:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    transition: all .3s ease;
 }
