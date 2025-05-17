@@ -790,3 +790,73 @@ footer {
     background-color: var(--secondary-color);
     transition: all .3s ease;
 }
+
+/* booking form */
+.booking-form {
+    background-color: var(--white-color);
+}
+
+.booking-form form {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+.booking-form .form-head h3 span {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.booking-btn button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-btn button:hover {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    transition: all .3s ease;
+}
+
+.booking-form label {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 6px;
+    display: block;
+    font-size: 15px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"] {
+    border: 1px solid #ced4da;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: var(--background-color);
+}
+
+.booking-form input[type="text"]:focus,
+.booking-form input[type="tel"]:focus,
+.booking-form input[type="date"]:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(236, 156, 37, 0.25);
+    outline: none;
+}
+
+.booking-form input[type="date"] {
+    position: relative;
+    color: #495057;
+}
+
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(40%);
+    cursor: pointer;
+}  
