@@ -750,7 +750,7 @@ footer {
 }
 
 .book-now {
-    opacity: 0;
+    opacity: .6;
     transform: translateY(10px);
     transition: all 0.4s ease;
 }
@@ -764,7 +764,7 @@ footer {
     background-color: var(--secondary-color);
     color: var(--white-color);
     border-radius: 30px;
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem .6rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -835,12 +835,12 @@ footer {
 .booking-form input[type="text"],
 .booking-form input[type="tel"],
 .booking-form input[type="date"] {
-    border: 1px solid #ced4da;
+    border: 1px solid var(--white-color);
     padding: 10px 14px;
     font-size: 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
-    background-color: var(--background-color);
+    background-color: var(--white-color);
 }
 
 .booking-form input[type="text"]:focus,
@@ -860,3 +860,63 @@ footer {
     filter: invert(40%);
     cursor: pointer;
 }  
+
+/* comments carousel */
+.testimonials { 
+    background-color: var(--background-color);
+    padding: 40px 0;
+}
+
+.testimonials .testimonial {
+    padding: 10px 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideFadeIn 0.8s ease forwards;
+}
+
+/* Hover effect */
+.testimonials .testimonial:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional stagger effect */
+.testimonials .testimonial:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.testimonials .testimonial:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.testimonials .testimonial:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Title style */
+.testimonials .testimonial h3 {
+    color: var(--text-color);
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Icon style */
+.testimonials .testimonial i {
+    color: var(--secondary-color);
+}
+
+/* Slide and fade animation */
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
