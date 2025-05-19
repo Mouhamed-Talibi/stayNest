@@ -864,7 +864,6 @@ footer {
 /* comments carousel */
 .testimonials { 
     background-color: var(--background-color);
-    padding: 40px 0;
 }
 
 .testimonials .testimonial {
@@ -878,13 +877,15 @@ footer {
     animation: slideFadeIn 0.8s ease forwards;
 }
 
-/* Hover effect */
 .testimonials .testimonial:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px) scale(1.02);
+    border-top: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    transition: all .5s ease-out;
 }
 
-/* Optional stagger effect */
 .testimonials .testimonial:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -895,7 +896,6 @@ footer {
     animation-delay: 0.6s;
 }
 
-/* Title style */
 .testimonials .testimonial h3 {
     color: var(--text-color);
     font-weight: bold;
@@ -903,12 +903,10 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Icon style */
 .testimonials .testimonial i {
     color: var(--secondary-color);
 }
 
-/* Slide and fade animation */
 @keyframes slideFadeIn {
     from {
         opacity: 0;
@@ -920,3 +918,99 @@ footer {
     }
 }
 
+/* find room */
+.find-room {
+    background-color: var(--white-color);
+}
+
+.find-form form {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.find-form h1 span {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.find-form h1 {
+    margin-bottom: 30px;
+}
+
+.find-form .form-group label {
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.find-form .search-btn button {
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+
+.find-form .search-btn button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: all .5s ease;
+}
+
+.available-rooms .room {
+    background: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.available-rooms .room:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.available-rooms .room p span {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--secondary-color);
+    animation: pulseRoom 2s infinite;
+}
+
+@keyframes pulseRoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.available-rooms {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.available-rooms .room hr {
+    border: none;
+    height: 2px;
+    background: var(--secondary-color);
+    background-size: 200% 100%;
+    animation: underline 3s infinite linear;
+}
+
+@keyframes underline {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+}
+
+.available-rooms .room .explore a i {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    padding: .5rem 1rem;
+}
+
+.available-rooms .room .explore a i:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transform: translateY(2px);
+    transition: all .4s ease;
+}

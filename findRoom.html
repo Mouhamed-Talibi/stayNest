@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>stayNest - SignUp</title>
+    <title>stayNest - Reviews</title>
 
     <!-- Favicon (Browser Tab Icon) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -50,11 +50,14 @@
                         <li class="nav-item">
                             <a class="nav-link active text-light fw-bold" aria-current="page" href="index.html">Home</a> 
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="rooms.html">Rooms</a>  
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#about">About</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#services">Services</a> 
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link booking" href="login.html">Login</a>  
+                            <a class="nav-link booking" href="rooms.html">Rooms</a>  
                         </li>
                     </ul>
                 </div>
@@ -73,48 +76,75 @@
                         <a class="nav-link active mobile-nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="rooms.html">Rooms</a>
+                        <a class="nav-link mobile-nav-link" href="index.html#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mobile-nav-link" href="login.html">Login</a>
+                        <a class="nav-link mobile-nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mobile-nav-link" href="rooms.html">Rooms</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <!-- login form -->
-        <div class="container-fluid login-container d-flex align-items-center justify-content-center">
-            <div class="row w-100 shadow-lg rounded-4 overflow-hidden login-box" style="max-width: 1000px;">
-                <!-- Image Column -->
-                <div class="col-lg-6 p-0">
-                    <div class="login-image"></div>
+        <!-- find your room -->
+        <div class="find-room py-5 pb-5">
+            <div class="container-fluid">
+                <!-- find form -->
+                <div class="d-flex justify-content-center find-form">
+                    <form action="" class="w-75 shadow p-4" method="">
+                        <h1 class="text-center">Find Your Room <span>Easilly</span></h1>
+                        <div class="form-group mb-3">
+                            <label for="">Check-ing date</label>
+                            <input type="date" name="checkingDate" id="" class="form-control" placeholder="Check-in date" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Check-out date</label>
+                            <input type="date" name="checkoutDate" id="" class="form-control" placeholder="Check-out date" required>
+                        </div>
+                        <div class="search-btn text-center">
+                            <button type="submit" class="btn rounded-pill">Find Room</button>
+                        </div>
+                    </form>
                 </div>
-                <!-- Form Column -->
-                <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                    <div class="form-box text-center">
-                        <h2 class="mb-4 fw-bold">Hi, Let's Create<span>your Account</span></h2>
-                        <form class="w-100">
-                            <div class="mb-3 text-start">
-                                <label for="text" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="email" name="fullName" placeholder="First and last name">
+                <!-- quick access rooms -->
+                <div class="main-title text-center mt-5">
+                    <i class="fas fa-hotel"></i>
+                    <h1 class="fw-bold">Our <span>Accommodations</span></h1>
+                    <p>Explore our elegantly designed rooms for a comfortable stay</p>
+                </div>
+                <!-- rooms cards -->
+                <div class="row justify-content-center align-items-center available-rooms mt-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="room shadow p-3 text-center">
+                            <h3>Next Week</h3>
+                            <hr class="w-25 mx-auto">
+                            <p>Available : <span>5</span></p>
+                            <div class="explore">
+                                <a href="" class="btn"><small><i class="fas fa-arrow-right"></i></small></a>
                             </div>
-                            <div class="mb-3 text-start">
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="room shadow p-3 text-center">
+                            <h3>Next Month</h3>
+                            <hr class="w-25 mx-auto">
+                            <p>Available : <span>10</span></p>
+                            <div class="explore">
+                                <a href="" class="btn"><small><i class="fas fa-arrow-right"></i></small></a>
                             </div>
-                            <div class="mb-4 text-start">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password" id="password" placeholder="use a strong password">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="room shadow p-3 text-center">
+                            <h3>Next Sunday</h3>
+                            <hr class="w-25 mx-auto">
+                            <p>Available : <span>33</span></p>
+                            <div class="explore">
+                                <a href="" class="btn"><small><i class="fas fa-arrow-right"></i></small></a>
                             </div>
-                            <div class="mb-4 text-start">
-                                <label for="password" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" name="password_confirmation" id="password" placeholder="Re-enter your password">
-                            </div>
-                            <button type="submit" class="btn main-btn w-100 rounded-pill">Sign Up</button>
-                            <div class="footer mt-3">
-                                <p>Already Have Account? <a href="login.html" class="text-decoration-none">Login</a></p>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
